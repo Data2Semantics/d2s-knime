@@ -8,6 +8,6 @@ Knime wrapper for existing RDF machine learning experiment. Currently manually d
 Installation:
 
 - Download KNIME Analytics Platform : http://www.knime.org/downloads/overview
-- For now, use update site : https://staff.fnwi.uva.nl/a.wibisono/d2s-knime-update/
-  Help > Install New Software > Add Repository > Location   
-
+- For now, use update site : 
+  * Help > Install New Software > Add Repository > Location   
+  * https://staff.fnwi.uva.nl/a.wibisono/d2s-knime-update/
