@@ -1,7 +1,7 @@
 d2s-knime
 =========
 
-Knime wrapper for existing RDF machine learning experiment. Currently manually developed, aiming (given enough time) to automatically generate annotated Ducktape modules.
+Knime wrapper for existing RDF machine learning experiment ( [mustard-experiments](https://github.com/Data2Semantics/mustard/tree/master/mustard-experiments) ). Currently manually developed, aiming (given enough time) to automatically generate annotated Ducktape modules.
 
 ![Screenshot](http://i.imgur.com/QRykFBl.png)
 
