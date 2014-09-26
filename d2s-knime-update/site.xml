@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.data2semantics.knime.feature_1.0.0.201409261135.jar" id="org.data2semantics.knime.feature" version="1.0.0.201409261135"/>
+</site>

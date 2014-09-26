@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="../kernel.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>RDFWLSubTreeKernel</name>
+    
+    <shortDescription>
+        This is the Wesfeiler Lehmann Sub Tree Kernel
+    
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>Kernel for Weisfeiler Lehman on RDF. Accepting RDF Statements, instances, blacklisted statements 
+        </intro>
+        
+        
+        <option name="short name of first option (like in the dialog)">description of first option</option>
+        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <!-- possibly more options that can also be grouped by tabs -->
+        <!--
+        <tab name="Standard Options">
+            <option name="short name of first option (like in the dialog)">description of first option</option>
+            <option name="short name of second option (like in the dialog)">description of second option</option>
+        </tab>
+        <tab name="Advanced Options">
+            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
+        </tab>
+        -->
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="All Data Set">Complete RDF Dataset S,P,O Table that is going to be computed </inPort>
+        <inPort index="1" name="Instances">Instances relevant to this learning </inPort>
+        <inPort index="2" name="Black List">Black listed statement that should be excluded </inPort>
+       <!-- possibly more input ports here-->
+        <outPort index="0" name="Feature Vector Matrix">Computed kernel </outPort>
+        <!-- possibly more output ports here-->
+    </ports>    
+    <views>
+        <view index="0" name="name of first view">Description of first view...</view>
+        <!--view index="1" name="name of second view">Description of second view...</view-->
+    </views>
+</knimeNode>

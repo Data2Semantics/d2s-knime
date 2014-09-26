@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension point="org.knime.workbench.repository.categories">
+      <category description="Data2Semantics Nodes for Knime" 
+      			icon="icons/d2s.png" 
+      			level-id="D2SNodes" 
+      			name="D2S Knime Nodes" 
+      			path="/"/>
+      <category description="RDF Readers" 
+      			icon="icons/rdf.png" 
+      			level-id="reader" 
+      			name="RDF Reader Nodes" 
+      			path="/D2SNodes"/>
+      <category description="Graph Kernel Nodes" 
+      			icon="icons/kernel.png" 
+      			level-id="kernel" 
+      			name="Graph Kernel Nodes" 
+      			path="/D2SNodes"/>
+   </extension>
+   
+   <extension point="org.knime.workbench.repository.nodes">
+      
+	  <node category-path="/D2SNodes/reader/" 
+	  		factory-class="org.data2semantics.knime.readers.sparql.SPARQLReaderNodeFactory" 
+			id="org.data2semantics.knime.readers.sparql.SPARQLReaderNodeFactory"/>
+   	  <node category-path="/D2SNodes/reader/" 
+   	  		factory-class="org.data2semantics.knime.readers.file.RDFFileReaderNodeFactory" 
+			id="org.data2semantics.knime.readers.file.RDFReaderNodeFactory"/>
+	  <node category-path="/D2SNodes/kernel/" 
+	  		factory-class="org.data2semantics.knime.kernels.wl.RDFWLSubTreeKernelNodeFactory" 
+			id="org.data2semantics.knime.kernels.wl.RDFWLSubTreeKernelNodeFactory"/>
+	  <node category-path="/D2SNodes/kernel/" 
+	  		factory-class="org.data2semantics.knime.kernels.ist.RDFIntersectionSubTreeKernelNodeFactory" 
+			id="org.data2semantics.knime.kernels.ist.RDFIntersectionSubTreeKernelNodeFactory"/>
+	  <node category-path="/D2SNodes/kernel/" 
+	  		factory-class="org.data2semantics.knime.kernels.ips.RDFIntersectionPartialSubTreeKernelNodeFactory" 
+			id="org.data2semantics.knime.kernels.ips.RDFIntersectionPartialSubTreeKernelNodeFactory"/>
+   </extension>
+   
+</plugin>

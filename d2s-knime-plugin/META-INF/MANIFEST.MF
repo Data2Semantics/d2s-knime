@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: D2S Knime Nodes
+Bundle-SymbolicName: org.data2semantics.knime; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .,
+ lib/openrdf-sesame-2.7.13-onejar.jar,
+ lib/slf4j-simple-1.7.7.jar,
+ lib/commons-httpclient-3.1.0.jar,
+ lib/slf4j-api-1.7.7.jar,
+ lib/org-apache-commons-logging.jar,
+ lib/commons-codec-1.9.jar,
+ lib/com.fasterxml.jackson.core.jar,
+ lib/mustard-experiments-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+Bundle-Activator: org.data2semantics.knime.D2SKnimeNodesActivatorPlugin
+Bundle-Vendor: Adianto Wibisono
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.junit
+Bundle-ActivationPolicy: lazy
+Export-Package: org.data2semantics.knime,
+ org.data2semantics.knime.kernels,
+ org.data2semantics.knime.readers
+
